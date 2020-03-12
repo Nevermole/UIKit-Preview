@@ -12,16 +12,16 @@ import Foundation
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct ViewController_SwiftUI<C: UIViewController>: UIViewRepresentable {
-    let controller: C
+public struct ViewController_SwiftUI<C: UIViewController>: UIViewRepresentable {
+    public let controller: C
 
-    func makeUIView(context: Context) -> UIView {
+    public func makeUIView(context: Context) -> UIView {
         let navigation = UINavigationController(rootViewController: controller)
         navigation.navigationBar.isHidden = false
         return navigation.topViewController!.view
     }
 
-    func updateUIView(_ view: UIView, context: Context) {
+    public func updateUIView(_ view: UIView, context: Context) {
 
     }
 }

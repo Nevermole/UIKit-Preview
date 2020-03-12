@@ -12,18 +12,18 @@ import Foundation
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct View_SwiftUI<C: UIView>: UIViewRepresentable {
-    let view: C
+public struct View_SwiftUI<C: UIView>: UIViewRepresentable {
+    public let view: C
 
-    init(_ view: C) {
+    public init(_ view: C) {
         self.view = view
     }
 
-    func makeUIView(context: Context) -> UIView {
+    public func makeUIView(context: Context) -> UIView {
         return  view
     }
     
-    func updateUIView(_ view: UIView, context: Context) {
+    public func updateUIView(_ view: UIView, context: Context) {
 
     }
 }

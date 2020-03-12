@@ -6,11 +6,11 @@
 //  Copyright © 2019 Synetech. All rights reserved.
 //
 
-#if compiler(>=5.0) && canImport(SwiftUI) && DEBUG
+#if canImport(SwiftUI) && DEBUG
 import SwiftUI
 
 @available(iOS 13.0, *)
-extension View {
+public extension View {
     func previewOnAllSizes(height: CGFloat) -> some View {
         Group {
             self.previewLayout(.fixed(width: 414, height: height))

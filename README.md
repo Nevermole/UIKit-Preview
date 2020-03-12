@@ -13,7 +13,8 @@ Use Xcode 11 and in your UIView or UIViewController add the following code to di
 ### UIView
 
 ```swift
-#if compiler(>=5.0) && canImport(SwiftUI) && DEBUG
+#if canImport(SwiftUI) && DEBUG
+import UIKit_Preview
 import SwiftUI
 
 @available(iOS 13.0, *)
@@ -30,7 +31,8 @@ struct YOUR_UIVIew_Class_Preview: PreviewProvider {
 
 ```swift
 
-#if compiler(>=5.0) && canImport(SwiftUI) && DEBUG
+#if canImport(SwiftUI) && DEBUG
+import UIKit_Preview
 import SwiftUI
 
 @available(iOS 13.0, *)
